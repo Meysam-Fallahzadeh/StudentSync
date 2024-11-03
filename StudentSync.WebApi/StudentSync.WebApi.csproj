@@ -2,8 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\StudentSync.Application\StudentSync.Application.csproj" />
+    <ProjectReference Include="..\StudentSync.Contracts\StudentSync.Contracts.csproj" />
+    <ProjectReference Include="..\StudentSync.Data.Ef\StudentSync.Data.Ef.csproj" />
+    <ProjectReference Include="..\StudentSync.Domain\StudentSync.Domain.csproj" />
+  </ItemGroup>
 
 </Project>

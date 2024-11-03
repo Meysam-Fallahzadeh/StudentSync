@@ -17,15 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Test", "06-Test", "{BFE8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07-Docs", "07-Docs", "{FC735254-1B79-4E8E-A78D-72B51C22E834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSunc.Domain", "StudentSunc.Domain\StudentSunc.Domain.csproj", "{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSync.Contracts", "StudentSync.Contracts\StudentSync.Contracts.csproj", "{89BAE60B-3BC2-4788-81AD-0CBF96536C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSync.Contracts", "StudentSync.Contracts\StudentSync.Contracts.csproj", "{89BAE60B-3BC2-4788-81AD-0CBF96536C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSync.Application", "StudentSync.Application\StudentSync.Application.csproj", "{79747B6E-9E7E-467A-8E11-C557BE72D893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSync.Application", "StudentSync.Application\StudentSync.Application.csproj", "{79747B6E-9E7E-467A-8E11-C557BE72D893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSync.Data.Ef", "StudentSync.Data.Ef\StudentSync.Data.Ef.csproj", "{4B3AC968-D9FF-4809-8996-D4B0B3C2B2A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSync.Data.Ef", "StudentSync.Data.Ef\StudentSync.Data.Ef.csproj", "{4B3AC968-D9FF-4809-8996-D4B0B3C2B2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSync.WebApi", "StudentSync.WebApi\StudentSync.WebApi.csproj", "{E83C1B03-9E98-4974-83B2-AC16537F4560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSync.WebApi", "StudentSync.WebApi\StudentSync.WebApi.csproj", "{E83C1B03-9E98-4974-83B2-AC16537F4560}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentSync.Domain", "StudentSync.Domain\StudentSync.Domain.csproj", "{BAC16B9D-A4B7-47F3-A571-465804EC564E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89BAE60B-3BC2-4788-81AD-0CBF96536C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89BAE60B-3BC2-4788-81AD-0CBF96536C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89BAE60B-3BC2-4788-81AD-0CBF96536C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,16 +51,25 @@ Global
 		{E83C1B03-9E98-4974-83B2-AC16537F4560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E83C1B03-9E98-4974-83B2-AC16537F4560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E83C1B03-9E98-4974-83B2-AC16537F4560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC16B9D-A4B7-47F3-A571-465804EC564E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC16B9D-A4B7-47F3-A571-465804EC564E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC16B9D-A4B7-47F3-A571-465804EC564E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC16B9D-A4B7-47F3-A571-465804EC564E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{559AFFC4-0FCC-4A4D-A3D1-61FFB52B7F75} = {BB6A6540-F89B-4AA5-AFE1-BF0BA7AEDBBF}
 		{89BAE60B-3BC2-4788-81AD-0CBF96536C18} = {BB6A6540-F89B-4AA5-AFE1-BF0BA7AEDBBF}
 		{79747B6E-9E7E-467A-8E11-C557BE72D893} = {BB6A6540-F89B-4AA5-AFE1-BF0BA7AEDBBF}
 		{4B3AC968-D9FF-4809-8996-D4B0B3C2B2A0} = {DAD614F4-55E7-49BB-929E-EB50DCBF4616}
 		{E83C1B03-9E98-4974-83B2-AC16537F4560} = {18B22C43-44BF-4DCA-97F5-A8A75BADB412}
+		{877F9B39-44D8-4D95-9BE8-6ED1BC9CC807} = {BB6A6540-F89B-4AA5-AFE1-BF0BA7AEDBBF}
+		{BAC16B9D-A4B7-47F3-A571-465804EC564E} = {BB6A6540-F89B-4AA5-AFE1-BF0BA7AEDBBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFF36527-9C52-46B7-8FF3-885D8697C724}
